@@ -1,0 +1,669 @@
+
+/*--------- global ---------*/
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Comfortaa', cursive;
+    color:#fff;
+}
+h1, h2{
+    text-transform: capitalize;
+    margin:0;
+
+}
+section{
+    width:100%;
+    height:100vh;
+    text-align:center;
+    margin:0;
+    
+}
+
+a{
+    text-decoration: none;
+    display:block;
+    width:100%;
+    height:100%;
+}
+.btn{
+    width:150px;
+    height:60px;
+    border-radius:50px;
+    line-height:60px;
+    margin:50px auto;
+}
+
+/*--------- index wrap ---------*/
+
+.indexWrap{
+    position:relative;
+    width:100%;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background:url('img/purples.svg');
+    scroll-behavior:smooth;
+    overflow-y: scroll;
+}
+
+/*--------- header ---------*/
+
+.topWrap{
+    display:flex;
+    justify-content: space-around;
+    padding-top:20px;
+    flex-wrap:wrap;
+   
+}
+.title{
+    width:180px;
+    height:50px;
+    border-radius:50px;
+    line-height:52px;
+    background-color:#6a11a0;
+    border:solid 1px #fff;
+}
+/*---------- nav -----------*/
+.navDiv{
+    margin-left:900px;
+    
+    
+}
+nav ul li{
+    width:100px;
+    height:50px;
+    margin:0 10px;
+    line-height:50px;
+    border-radius:50px;
+    border:none;
+    list-style: none;
+    display:inline-block;
+    transition: .2s linear;
+}
+nav ul li:hover{
+    background-color:#6a11a0;
+}
+nav ul li a{
+    color:#000;
+    transition: .2s linear;
+}
+
+nav ul li a:hover{
+    color:#fff;
+}
+
+/*--------- logo ---------*/
+
+.logo{
+    position: absolute;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:solid 1px #6a11a0;
+    background-color:rgba(255, 255, 255, 0.692);
+    padding:10px;
+    left:-200px;
+    top:250px;
+}
+.logo img{
+    width:100%;
+}
+#mproBtn{
+    display:none;
+}
+
+/*--------- webD text ---------*/
+.webD{
+   opacity: 0;
+   width:200px;
+   line-height:30px;
+   margin:0 auto;
+   padding:10px 0;
+   border-bottom:4px solid #6a11a0;
+   animation: webAppear 1s linear 3000ms 1 forwards;
+  
+}
+
+
+@keyframes webAppear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+/*--------- welcome text ---------*/
+
+.welcomeWrap{
+    position: absolute;
+    top:350px;
+    left:200px;
+    line-height:50px;
+    width:700px;
+    height:100px;
+    border-radius:50px;
+    background-color:#6a11a0;
+    
+}
+.welcomeWrap h1{
+    font-size:30px;
+}
+/*------------about btn ----------*/
+#aboutBtn{
+    opacity: 0;
+    position: absolute;
+    border:#fff solid;
+    left:1300px;
+    top:700px;
+    transition: .3s;
+    animation: webAppear 1s linear 4000ms 1 forwards;
+}
+#aboutBtn:hover{
+    background-color:#fff;
+}
+
+#aboutBtn a{
+    color:#fff;
+    transition: .3s;
+}
+#aboutBtn a:hover{
+    color:#b046f2;
+}
+/*--------- skele ---------*/
+
+.skele{
+    position: relative;
+    top:250px;
+    width:600px;
+    height:600px;
+}
+
+.eye{
+    position: absolute;
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background-color:#fff;
+    border:solid 12px #b046f2;
+    top:155px;
+    left:290px
+}
+.eye2{
+    position: absolute;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:solid 10px #b046f2;
+    background-color:#fff;
+    top:185px;
+    left:180px
+}
+.lid{
+    position: absolute;
+    left:-15px;
+    top:2px;
+    width:110px;
+    height:27px;
+    background-color:#b046f2;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(-20deg)
+}
+.lid2{
+    position: absolute;
+    left:-5px;
+    width:60px;
+    height:15px;
+    background-color:#b046f2;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(-20deg)
+}
+.pupil{
+    position: absolute;
+    width:30px;
+    height:30px;
+    background-color:#000;
+    border-radius:50%;
+    top:50px;
+    left:60px;
+}
+.pupil2{
+    position: absolute;
+    width:20px;
+    height:20px;
+    background-color:#000;
+    border-radius:50%;
+    top:30px;
+    left:30px;
+}
+.skele img{
+    width:100%;
+    
+}
+
+.triangle{
+    height:0px;
+    width:0px;
+    border:60px solid;
+    border-bottom-color:transparent;
+    border-right-color: #6a11a0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    margin:40% auto;
+    position: absolute;
+    transform: rotate(45deg);
+    top:-380px;
+    left:600px;
+    
+   
+ }
+
+/*-------------- about ----------------*/
+#about{
+    width:100%;
+    height:150vh;
+    background: url('img/wave.svg')
+    
+}
+.aboutWrap{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
+   
+}
+.textWrap{
+    width:30%;
+    height:700px;
+    background-color:rgb(63, 63, 63); 
+    border-radius:5px;
+    color:#fff;
+    padding:30px;
+    margin-top:100px;
+    z-index: 10;
+    border:2px solid
+    
+}
+#contactBtn{
+    border:3px solid #fff;
+    transition:.2s;
+}
+#contactBtn:hover{
+    background-color:#fff;
+}
+#contactBtn a{
+    color:#fff;
+    transition:.2s;
+}
+#contactBtn a:hover{
+    color:#000;
+}
+.skillsWrap{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    
+}
+.skills{
+    width:40%;
+    text-transform: capitalize;
+    
+}
+
+.skills ul li{
+    text-align:left;
+    line-height: 25px;
+    padding-left:40px;
+}
+
+.textWrap p {
+    line-height: 30px;
+}
+.textWrap h2{
+    overflow: hidden;
+}
+.textWrap h2:before,
+.textWrap h2:after {
+  background-color: rgb(146, 146, 146);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 170px;
+}
+
+.textWrap h2:before {
+    right: 40px;
+    margin-left: -70%;
+  }
+  
+  .textWrap h2:after {
+    left: 40px;
+    margin-right: -70%;
+  }
+
+.fontWrap{
+    width:30%;
+    height:400px;
+    line-height:70px;
+    border-radius:5px;
+    color:#000;
+    padding:10px;
+    font-size:20px;
+    font-weight: 100;
+}
+
+.line{
+   width:400px;
+   height:7px;
+   border-radius:50px;
+   background-color: #6a11a0;
+   margin: 20px auto;
+   
+    
+}
+
+
+
+.btn a{
+    color:#b046f2;
+    font-weight: 700;
+    
+}
+
+#projectBtn{
+    border:3px solid #b046f2;
+    transition:.2s;
+}
+#projectBtn:hover{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    line-Height:100px;
+    font-size:16px;
+    background-color:#b046f2;
+}
+
+
+#projectBtn a:hover{
+    color:#fff;
+}
+/*-------------------------------- footer ----------------------------*/
+#footer{
+    width:100%;
+    height:70vh;
+    background-color:rgb(63, 63, 63);
+}
+.contactWrap{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.footerBox{
+    margin-top:60px;
+    width:600px;
+    height:60vh;
+}
+.footerBox h2:before,
+.footerBox h2:after {
+  background-color: rgb(146, 146, 146);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.footerBox h2:before {
+    right: 40px;
+    margin-left: -70%;
+  }
+  
+  .footerBox h2:after {
+    left: 40px;
+    margin-right: -70%;
+  }
+  .messageContainer p{
+      padding-top:30px;
+  }
+#contactForm{
+    margin-top:40px;
+    
+}
+.nameEmail{
+    width:400px;
+    height:30px;
+    margin:15px 0;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom: solid 1px rgb(136, 136, 136);
+    color:#fff;
+
+}
+.textArea{
+    width:400px;
+    height:30px;
+    background:transparent;
+    margin:70px 0;
+    border:none;
+    outline:none;
+    border-bottom: solid 1px rgb(136, 136, 136);
+    color:#fff;
+}
+#messageBtn{
+    margin:20px;
+    border:solid 2px #fff;
+    line-height:30px;
+    color:#fff;
+    background:none;
+    font-size:20px;
+    transition:.2s;
+}
+#messageBtn:hover{
+    cursor: pointer;
+    color:#000;
+    background-color:#fff;
+
+}
+/*----------- right footer --------------*/
+
+#gBtn, #cpBtn{
+    border:solid 2px #fff;
+    transition: .2s;
+}
+#gBtn a, #cpBtn a{
+    color:#fff;
+    transition: .2s;
+}
+#gBtn:hover, #cpBtn:hover{
+    background-color:#fff;
+}
+#gBtn a:hover, #cpBtn a:hover{
+    color:#000;
+}
+.bottomIcons{
+    width:100%;
+    height:50px;
+    font-size:30px;
+}
+.bottomIcons i{
+   margin:10px;
+    
+}
+.bottomIcons a{
+    display:inline;
+    color:#fff;
+}
+.cr{
+   position: relative;
+   top:-20px;
+}
+
+/*------------------ responsive ---------------------*/
+@media (min-width: 750px) and (max-width: 1050px){
+    
+    .navDiv{
+        display:none;
+    }
+    .webD{
+        margin-top:30px;
+        animation: webAppear 1s linear 500ms 1 forwards;
+        
+    }
+    .welcomeWrap{
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    .skele{
+       display:none;
+    }
+    .triangle{
+        display:none;
+    }
+    .logo{
+        display:none;
+    }
+    #aboutBtn{
+        animation: webAppear 1s linear 500ms 1 forwards;
+        top:550px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    #about{
+        height:auto;
+        background:#fff;
+        
+    }
+    .aboutWrap{
+        height:auto;
+    }
+    .fontWrap{
+        width:80%;
+        height:auto;
+        margin:40px;
+    }
+
+    .textWrap{
+        width:80%;
+    }
+    #footer{
+        height:auto;
+    
+    }
+    .footerBox{
+        height:auto;
+    }
+    .cr p{
+        margin:90px 0 0 0;
+    }
+}
+
+
+
+/*------------------ mobile ----------------------*/
+@media (min-width: 300px) and (max-width: 650px){
+   
+    .navDiv{
+        display:none;
+    }
+    .webD{
+        margin-top:30px;
+        opacity: 1;
+        animation: none;
+        
+    }
+    .welcomeWrap{
+        left:0;
+        right:0;
+        top:250px;
+        margin:auto;
+        width:90%;
+    }
+    .welcomeWrap h1, .welcomeWrap h2{
+        font-size:18px;
+    }
+    .skele{
+       display:none;
+    }
+    .triangle{
+        display:none;
+    }
+    .logo{
+        display:none;
+    }
+    #mproBtn{
+        display:block;
+        position:absolute;
+        border:solid #fff 3px;
+        left:0;
+        right:0;
+        top:350px;
+    }
+    #mproBtn  a{
+        color:#fff;
+    }
+    #aboutBtn{
+        opacity: 1;
+        animation: none;
+        top:500px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    #about{
+        height:auto;
+        background:#fff;
+    }
+    .aboutWrap{
+        height:auto;
+    }
+    .skillsWrap{
+        height:auto;
+    }
+    .skills{
+        width:90%;
+    }
+    .fontWrap{
+        width:80%;
+        height:auto;
+        margin:40px;
+    }
+    .textWrap{
+        width:100%;
+        height:auto;
+        margin:0;
+    }
+    #footer{
+        height:auto;
+    }
+    .footerBox h2:before,
+    .footerBox h2:after {
+        display: none;
+}
+    .footerBox{
+        height:auto;
+    }
+    .nameEmail, .textArea{
+        width:80%;
+    }
+    .line{
+        width:95%;
+    }
+    .cr p{
+        margin:90px 0 0 0;
+    }
+
+}
+
+
+    
