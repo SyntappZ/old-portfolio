@@ -3,7 +3,7 @@
 
 body{
     margin:0;
-    padding:0;
+    padding: 0;
     font-family: 'Comfortaa', cursive;
     color:#fff;
 }
@@ -53,7 +53,7 @@ a{
     display:flex;
     justify-content: space-around;
     padding-top:20px;
-    flex-wrap:wrap;
+    
    
 }
 .title{
@@ -67,8 +67,6 @@ a{
 /*---------- nav -----------*/
 .navDiv{
     margin-left:900px;
-    
-    
 }
 nav ul li{
     width:100px;
@@ -148,6 +146,21 @@ nav ul li a:hover{
 .welcomeWrap h1{
     font-size:30px;
 }
+.triangle{
+    height:0px;
+    width:0px;
+    border:60px solid;
+    border-bottom-color:transparent;
+    border-right-color: #6a11a0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    margin:40% auto;
+    position: absolute;
+    transform: rotate(45deg);
+    top:-250px;
+    left:400px;
+ }
+
 /*------------about btn ----------*/
 #aboutBtn{
     opacity: 0;
@@ -242,33 +255,19 @@ nav ul li a:hover{
     
 }
 
-.triangle{
-    height:0px;
-    width:0px;
-    border:60px solid;
-    border-bottom-color:transparent;
-    border-right-color: #6a11a0;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    margin:40% auto;
-    position: absolute;
-    transform: rotate(45deg);
-    top:-380px;
-    left:600px;
-    
-   
- }
 
-/*-------------- about ----------------*/
+/*------------------------------------------ about ----------------------------------------------*/
 #about{
     width:100%;
-    height:150vh;
+    height:auto;
+    min-height:170vh;
     background: url('img/wave.svg')
     
 }
 .aboutWrap{
+    height:auto;
     width:100%;
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content: space-around;
     align-items:center;
@@ -277,7 +276,7 @@ nav ul li a:hover{
 }
 .textWrap{
     width:30%;
-    height:700px;
+    height:auto;
     background-color:rgb(63, 63, 63); 
     border-radius:5px;
     color:#fff;
@@ -392,15 +391,15 @@ nav ul li a:hover{
 #projectBtn a:hover{
     color:#fff;
 }
-/*-------------------------------- footer ----------------------------*/
+/*------------------------------------------------ footer ------------------------------------------*/
 #footer{
     width:100%;
-    height:70vh;
+    height:auto;
+    padding:20px 0;
     background-color:rgb(63, 63, 63);
 }
 .contactWrap{
     width:100%;
-    height:auto;
     display:flex;
     justify-content: space-around;
     flex-wrap:wrap;
@@ -408,7 +407,7 @@ nav ul li a:hover{
 .footerBox{
     margin-top:60px;
     width:600px;
-    height:60vh;
+    height:auto;
 }
 .footerBox h2:before,
 .footerBox h2:after {
@@ -502,14 +501,14 @@ nav ul li a:hover{
     display:inline;
     color:#fff;
 }
-.cr{
-   position: relative;
-   top:-20px;
-}
+
 
 /*------------------ responsive ---------------------*/
+
 @media (min-width: 750px) and (max-width: 1050px){
-    
+    .topWrap{
+        flex-wrap:wrap;
+    }
     .navDiv{
         display:none;
     }
@@ -560,9 +559,6 @@ nav ul li a:hover{
         height:auto;
     
     }
-    .footerBox{
-        height:auto;
-    }
     .cr p{
         margin:90px 0 0 0;
     }
@@ -572,7 +568,9 @@ nav ul li a:hover{
 
 /*------------------ mobile ----------------------*/
 @media (min-width: 300px) and (max-width: 650px){
-   
+    .topWrap{
+        flex-wrap:wrap;
+    }
     .navDiv{
         display:none;
     }
@@ -649,10 +647,8 @@ nav ul li a:hover{
     .footerBox h2:before,
     .footerBox h2:after {
         display: none;
-}
-    .footerBox{
-        height:auto;
     }
+
     .nameEmail, .textArea{
         width:80%;
     }
